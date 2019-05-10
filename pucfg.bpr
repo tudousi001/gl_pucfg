@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="pucfg.exe"/>
+    <OBJFILES value="pucfg.obj cfgclt.obj dataclt.obj main.obj tcpclt.obj udp.obj md5.obj 
+      display.obj TalkClt.obj dateplan.obj printer.obj printset.obj fileopt.obj 
+      IPset.obj acc.obj switch.obj SwitchDev.obj TSCprinter.obj"/>
+    <RESFILES value="pucfg.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) main.dfm display.dfm printset.dfm IPset.dfm acc.dfm switch.dfm 
+      SwitchDev.dfm"/>
+    <LIBFILES value="TSCLib.lib"/>
+    <LIBRARIES value="inet.lib xmlrtl.lib trackbar.lib WinSkinC6.lib vclx.lib bcbsmp.lib rtl.lib 
+      vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib bcbsmp.lib vclx.lib WinSkinC6.lib trackbar.lib xmlrtl.lib 
+      inet.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
+      bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi WinSkinC6.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="pucfg.cpp"/>
+    <INCLUDEPATH value="$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl;D:\vcl\VclSkin503\VCLSkin5.03.07.12\Source;D:\vcl\trackbar"/>
+    <LIBPATH value="$(BCB)\Projects\Lib;$(BCB)\Projects;$(BCB)\lib\obj;$(BCB)\lib;D:\vcl\VclSkin503\VCLSkin5.03.07.12\Source;D:\vcl\VclSkin503\VCLSkin5.03.07.12\skins;D:\vcl\trackbar"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I$(BCB)\Projects -I$(BCB)\include -I$(BCB)\include\vcl 
+      -ID:\vcl\VclSkin503\VCLSkin5.03.07.12\Source -ID:\vcl\trackbar -src_suffix 
+      cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=c:\PROGRA~1\borland\CBUILD~1\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 
+      -b- -k -y -v -vi- -c -tW -tWM"/>
+    <PFLAGS value="-$Y+ -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="pucfg.res" FORMNAME="" UNITNAME="pucfg.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="pucfg.cpp" FORMNAME="" UNITNAME="pucfg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="cfgclt.cpp" FORMNAME="" UNITNAME="cfgclt.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="dataclt.cpp" FORMNAME="" UNITNAME="dataclt.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="main.cpp" FORMNAME="MainForm" UNITNAME="main" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="tcpclt.cpp" FORMNAME="" UNITNAME="tcpclt.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="udp.cpp" FORMNAME="" UNITNAME="udp.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="md5.c" FORMNAME="" UNITNAME="md5" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="display.cpp" FORMNAME="DisplayForm" UNITNAME="display" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TalkClt.cpp" FORMNAME="" UNITNAME="TalkClt" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="dateplan.cpp" FORMNAME="" UNITNAME="dateplan" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="printer.cpp" FORMNAME="" UNITNAME="printer.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="printset.cpp" FORMNAME="PrintForm" UNITNAME="printset" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="fileopt.cpp" FORMNAME="" UNITNAME="fileopt" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IPset.cpp" FORMNAME="IPSetForm" UNITNAME="IPset" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="acc.cpp" FORMNAME="AccForm" UNITNAME="acc" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="switch.cpp" FORMNAME="SwitchForm" UNITNAME="switch" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SwitchDev.cpp" FORMNAME="SwitchDevForm" UNITNAME="SwitchDev" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TSCLib.lib" FORMNAME="" UNITNAME="TSCLib.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TSCprinter.cpp" FORMNAME="" UNITNAME="TSCprinter" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=1
+MinorVer=0
+Release=0
+Build=45
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=2052
+CodePage=936
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.45
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+
+[Excluded Packages]
+d:\program files (x86)\borland\cbuilder6\Bin\dclite60.bpl=Borland Integrated Translation Environment
+
+[HistoryLists\hlIncludePath]
+Count=13
+Item0=$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl;D:\vcl\VclSkin503\VCLSkin5.03.07.12\Source;D:\vcl\trackbar
+Item1=$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl;D:\vcl\VclSkin503\VCLSkin5.03.07.12\Source;D:\vcl\trackbar;D:\xe5\RAD Studio\12.0\include\windows\sdk
+Item2=$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl;D:\vcl\VclSkin503\VCLSkin5.03.07.12\Source;D:\vcl\trackbar;D:\xe5\RAD Studio\12.0\include\windows
+Item3=$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl;D:\bcb\trackbar;D:\vcl\VclSkin503\VCLSkin5.03.07.12\Source
+Item4=$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl;D:\bcb\trackbar;D:\work\pucfg\vcl\VclSkin503\VCLSkin5.03.07.12\skins;D:\work\pucfg\vcl\VclSkin503\VCLSkin5.03.07.12\Source;D:\work\pucfg\trackbar
+Item5=$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl;D:\work\pucfg\vcl\VclSkin503\VCLSkin5.03.07.12\skins;D:\work\pucfg\vcl\VclSkin503\VCLSkin5.03.07.12\Source;D:\work\pucfg\trackbar
+Item6=D:\vcl\VclSkin503\VCLSkin5.03.07.12\Source;d:\bcb\trackbar;D:\vcl\vclskin\setup\source;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl;D:\trackbar;D:\work\p配置软件\vcl\VclSkin503\VCLSkin5.03.07.12\Source;D:\work\p配置软件\trackbar
+Item7=D:\vcl\VclSkin503\VCLSkin5.03.07.12\Source;d:\bcb\trackbar;D:\vcl\vclskin\setup\source;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl;D:\trackbar
+Item8=D:\vcl\VclSkin503\VCLSkin5.03.07.12\Source;d:\bcb\trackbar;D:\vcl\vclskin\setup\source;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item9=d:\bcb\trackbar;D:\vcl\vclskin\setup\source;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item10=d:\bcb\trackbar;D:\vcl\VclSkin503\VCLSkin5.03.07.12\Source;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item11=D:\vcl\VclSkin503\VCLSkin5.03.07.12\Source;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item12=D:\vcl\vclskin\setup\source;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=10
+Item0=$(BCB)\Projects\Lib;$(BCB)\Projects;$(BCB)\lib\obj;$(BCB)\lib;D:\vcl\VclSkin503\VCLSkin5.03.07.12\Source;D:\vcl\VclSkin503\VCLSkin5.03.07.12\skins;D:\vcl\trackbar
+Item1=$(BCB)\Projects\Lib;$(BCB)\Projects;$(BCB)\lib\obj;$(BCB)\lib;D:\vcl\VclSkin503\VCLSkin5.03.07.12\Source;D:\vcl\VclSkin503\VCLSkin5.03.07.12\skins;D:\bcb\trackbar
+Item2=$(BCB)\Projects\Lib;$(BCB)\Projects;$(BCB)\lib\obj;$(BCB)\lib;D:\work\pucfg\vcl\VclSkin503\VCLSkin5.03.07.12\Source;D:\work\pucfg\vcl\VclSkin503\VCLSkin5.03.07.12\skins;D:\work\pucfg\trackbar
+Item3=D:\vcl\VclSkin503\VCLSkin5.03.07.12\Source;d:\bcb\trackbar;D:\vcl\vclskin\setup\source;$(BCB)\Projects\Lib;$(BCB)\Projects;$(BCB)\lib\obj;$(BCB)\lib;D:\vcl\VclSkin503\VCLSkin5.03.07.12\skins;D:\work\p配置软件\vcl\VclSkin503\VCLSkin5.03.07.12\Source;D:\work\p配置软件\vcl\VclSkin503\VCLSkin5.03.07.12\skins;D:\work\p配置软件\trackbar
+Item4=D:\vcl\VclSkin503\VCLSkin5.03.07.12\Source;d:\bcb\trackbar;D:\vcl\vclskin\setup\source;$(BCB)\Projects\Lib;$(BCB)\Projects;$(BCB)\lib\obj;$(BCB)\lib;D:\vcl\VclSkin503\VCLSkin5.03.07.12\skins
+Item5=D:\vcl\VclSkin503\VCLSkin5.03.07.12\Source;d:\bcb\trackbar;D:\vcl\vclskin\setup\source;$(BCB)\Projects\Lib;$(BCB)\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item6=d:\bcb\trackbar;D:\vcl\vclskin\setup\source;$(BCB)\Projects\Lib;$(BCB)\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item7=d:\bcb\trackbar;D:\vcl\VclSkin503\VCLSkin5.03.07.12\Source;$(BCB)\Projects\Lib;$(BCB)\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item8=D:\vcl\VclSkin503\VCLSkin5.03.07.12\Source;$(BCB)\Projects\Lib;$(BCB)\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item9=D:\vcl\vclskin\setup\source;$(BCB)\Projects\Lib;$(BCB)\Projects;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+  </IDEOPTIONS>
+</PROJECT>
